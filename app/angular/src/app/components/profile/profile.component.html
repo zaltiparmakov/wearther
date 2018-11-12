@@ -1,0 +1,190 @@
+	<div id="main">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 razporeditev" >
+					<div class="prikazna" id="glavna"> <!-- thumbnail-->
+						<img src="../img/1slika.jpg" alt="" id="prikazna">
+					<!-- 	<canvas id="myCanvas" class="prikazna"  width="300" height="300" style="border:1px solid #d3d3d3;">
+							<script>var c = document.getElementById("myCanvas");
+								var ctx = c.getContext("2d");
+
+								ctx.beginPath();
+								ctx.arc(150,70,50,0,2*Math.PI);
+								ctx.lineWidth=5;
+								ctx.stroke();
+
+								ctx.beginPath();
+								ctx.arc(150,250,100,0, 3.15,2*Math.PI);
+								ctx.stroke();
+							</script>
+						</canvas> -->
+					</div>
+				</div>
+				<div class="col-lg-3 razporeditev" style="margin-top: -10px;">
+					<p id="username">Username</p>
+					<p class="prikazna">Domači kraj</p>
+					<p>Telefonska številka</p>
+					<p>GESLO: ********</p>
+					<button type="button" class="btn">Zamenjaj geslo</button>
+				</div>
+				<div class="col-lg-3 razporeditev">
+					<p><b>Pretekli dogodki</b></p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
+				</div>
+				<div class="col-lg-2 razporeditev">
+					<p><b>Kontakti</b></p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h1 style="text-align: center; margin:-20px 0 30px 0;">Izbira drugega avatarja</h1>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="thumbnail mozne prva" id="prva">
+								<img src="../img/2slika.jpg" alt="" id="prvaSlika" onclick="swapFirst()">
+							<!-- <canvas id="canvas1" width="300" height="290" style="border:1px solid #d3d3d3;" onclick="zamenjajSliko()">
+								<script>var c = document.getElementById("canvas1");
+								var ctx = c.getContext("2d");
+
+								ctx.beginPath();
+								ctx.arc(150,140,120,0,2*Math.PI);
+								ctx.lineWidth=5;
+								ctx.stroke();
+
+								ctx.beginPath();
+								ctx.arc(100,100,20,0,2*Math.PI);
+								ctx.lineWidth=5;
+								ctx.stroke();
+
+								ctx.beginPath();
+								ctx.arc(200,100,20,0,2*Math.PI);
+								ctx.lineWidth=5;
+								ctx.stroke();
+
+								ctx.beginPath();
+								ctx.arc(150, 175, 70, 0, Math.PI, false);
+								ctx.closePath();
+								ctx.lineWidth = 5;
+								ctx.fillStyle = 'white';
+								ctx.fill();
+								ctx.strokeStyle = 'black';
+								ctx.stroke();
+								</script>
+							</canvas> -->
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="thumbnail mozne druga" id="druga">
+							<img src="../img/3slika.jpg" alt="" id="drugaSlika"  onclick="swapSecond()">
+							<!-- <canvas id="canvas2" width="300" height="290" style="border:1px solid #d3d3d3;" onclick="zamenjajSliko()">
+								<script type="text/javascript">
+									var c = document.getElementById("canvas2");
+									var ctx = c.getContext("2d");
+
+									ctx.beginPath();
+									ctx.arc(150,140,120,0,2*Math.PI);
+									ctx.lineWidth=5;
+									ctx.stroke();
+
+									ctx.beginPath();
+									ctx.arc(100,100,20,0,2*Math.PI);
+									ctx.lineWidth=5;
+									ctx.stroke();
+
+									ctx.beginPath();
+									ctx.arc(200,100,20,0,2*Math.PI);
+									ctx.lineWidth=5;
+									ctx.stroke();
+
+									ctx.beginPath();
+									ctx.moveTo(80,200);	
+									ctx.lineTo(220,200);
+									ctx.stroke();
+								</script>
+							</canvas> -->
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="thumbnail mozne tretja" id="tretja">
+								<img src="../img/4slika.jpg" alt="" id="tretjaSlika"  onclick="swapThird()">
+							<!-- <canvas id="canvas3" width="300" height="290" style="border:1px solid #d3d3d3;" onclick="zamenjajSliko()">
+								<script type="text/javascript">
+									var c = document.getElementById("canvas3");
+									var ctx = c.getContext("2d");
+
+									ctx.beginPath();
+									ctx.arc(150,140,120,0,2*Math.PI);
+									ctx.lineWidth=5;
+									ctx.stroke();
+
+									//levo oko
+									ctx.beginPath();
+									ctx.moveTo(80,80);	
+									ctx.lineTo(120,120);
+									ctx.stroke();
+
+									ctx.beginPath();
+									ctx.moveTo(80,120);	
+									ctx.lineTo(120,80);
+									ctx.stroke();
+
+									//desno oko
+									ctx.beginPath();
+									ctx.moveTo(180,80);	
+									ctx.lineTo(220,120);
+									ctx.stroke();
+
+									ctx.beginPath();
+									ctx.moveTo(220,80);	
+									ctx.lineTo(180,120);
+									ctx.stroke();
+
+
+
+									//uste
+									ctx.beginPath();
+									ctx.arc(150,150,80,2.7, 0.5,2*Math.PI);
+									ctx.stroke();
+								</script>
+							</canvas> -->
+						</div>
+
+			<!-- 		</div><div class="col-lg-4">
+						<div class="thumbnail mozne cetrta">
+							<div style="height: 300px; width: 300px;">stirka</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="thumbnail mozne peta">
+							<div style="height: 300px; width: 300px;">petka</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="thumbnail mozne sesta">
+							<div style="height: 300px; width: 300px;">sestka</div>
+						</div> -->
+					</div> 
+				</div>
+			</div>
+		</div>
+<script>
+
+//privzeti
+//prvi
+//drugi
+//tretji
+</script>
+
+		<!--
+		<div class="razporeditev"></div>
+		<div class="razporeditev"></div>
+		<div class="razporeditev"></div>
+		<div class="razporeditev"></div>
+		<div class="razporeditev"></div>
+		<div class="razporeditev"></div>-->
+	</div>

@@ -1,0 +1,50 @@
+		<button onclick="document.getElementById('vp').style.display='block'">vpis</button>
+		<button onclick="document.getElementById('reg').style.display='block'">reg</button>
+		<div id="vp" class="modal">
+		  <form class="modal-content ani">
+			<div class="div1">
+			  <span onclick="document.getElementById('vp').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<h3>Vpis</h3>
+			</div>
+			<div class="div2">
+			  <label><b>Uporabniško ime</b></label>
+			  <input type="text" placeholder="Vnesi uporabniško ime" name="uname" required>
+
+			  <label><b>Geslo</b></label>
+			  <input type="password" placeholder="Vnesi geslo" name="psw" required>
+				
+			  <input type="checkbox" checked="checked">
+			  <button class="alternativa" id="fb"></button>
+			  <button class="alternativa" id="google"></button>
+			  <span class="pozabo"><a href="">Pozabil geslo?</a></span>
+			</div>
+
+			<div class="div2">
+			  <button type="button" onclick="document.getElementById('vp').style.display='none'" class="cancelbtn">Prekliči</button>
+			  <button type="submit" class="login">Vpis</button>
+			</div>
+		  </form>
+		</div>
+		<div id="reg" class="modal">
+		  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="modal-content ani">
+			<div class="div1">
+			  <span onclick="document.getElementById('reg').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<h3>Registracija</h3>
+			</div>
+			<div class="div2">
+			  <label><b>Uporabniško ime</b></label>
+			  <input ngModel type="text" placeholder="Vnesi uporabniško ime" name="username" required>
+			  <label><b>E-pošta</b></label>
+			  <input type="text" placeholder="E-poštni naslov" name="email" required>
+
+			  <label><b>Geslo</b></label>
+			  <input ngModel type="password" placeholder="Vnesi geslo" name="password" id="geslo"required>
+			  <label><b>Potrdi geslo</b></label>
+			  <input type="password" placeholder="Potrdi geslo" name="cpsw" id="potrdi_geslo" onkeyup="validate()">
+			</div>
+			<div class="div2">
+			  <button type="button" onclick="document.getElementById('reg').style.display='none'" class="cancelbtn">Prekliči</button>
+			  <button type="submit" class="login" id="vpis">Vpis</button>
+			</div>
+		  </form>
+		</div>

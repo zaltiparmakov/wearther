@@ -1,0 +1,146 @@
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+nav div li .linki{
+	padding-bottom: 0px;
+
+}
+
+.navbar li{
+	height:50px;
+}
+
+nav div li hr{ 
+	margin-top: 2px;
+}
+
+
+/*
+.active{
+	padding-bottom: -10px;
+}*/
+
+/*NAVBAR ELEMENTI*/
+.navbar .container li a{
+	font-weight: 700;
+}
+
+.navigator{
+	padding-right: 380px;
+	float: left;
+}
+#navStopinje{
+	color: white;
+	font-size: 25px;
+	margin:20px;
+	padding: 20px;
+}
+/*
+hr {
+    border: none;
+    height: 1px;
+    background: white;
+}*/
+
+.navbar .container li a:hover  hr {
+	color:white;
+	animation-name: animacija;
+	animation-duration: 0.3s;
+	position:relative;
+}
+
+@keyframes animacija{
+	0%  {transform: scale(0);}
+	10% {transform: scale(0.1);}
+	20% {transform: scale(0.2);}
+	30% {transform: scale(0.3);}
+	40% {transform: scale(0.4);}
+	50% {transform: scale(0.5);}
+	60% {transform: scale(0.6);}
+	70% {transform: scale(0.7);}
+	80% {transform: scale(0.8);}
+	90% {transform: scale(0.9);}
+	100% {transform: scale(1);}
+}
+
+.btn-group{
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.navbar .navbar-nav{
+	float: none;
+	display: inline-block;
+		
+
+}
+
+#nazaj{
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+/* KONEC NAVBAR */
+/* KONEC NAVBAR */
+/* KONEC NAVBAR */
+
+
+
+#main{
+	padding-top: 50px;
+}
+
+#naslov{
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.levo{
+	float:left;
+	/*border: 1px solid red;*/
+	height: 1000px;
+	width: 25%;
+}
+.desno{
+	float:left;
+	/*border: 1px solid red;*/
+	height: 1000px;
+	width: 25%;
+}
+.dogodekOkvir{
+	float:left;
+	width: 50%;
+	text-align: center;
+	margin: 50px 0;
+	border: 2px solid black;
+	border-radius: 15px;
+	height: 710px;
+}
+
+#vrsta{
+	font-weight: 700;
+
+}
+
+select{
+	border-radius: 150px;
+	width: 300px;
+}
+
+button{
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 900px){
+	.dogodekOkvir{
+		border: none;
+
+	}
+	#naslov{
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+}

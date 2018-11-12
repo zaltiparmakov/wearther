@@ -1,0 +1,101 @@
+
+
+<p id="naslov" >Wearther</p>
+
+<!--GLAVNI DEL - dve slike/animacije in temperature -->
+<!--<div id="animacija" class="tretjina">
+    <img alt="" src="https://pre00.deviantart.net/2868/th/pre/f/2015/180/0/1/tfa_optimus_human_error_by_kaitlinexe-d8z8e2v.png" style="height: 450px; width: 350px;">
+</div>-->
+
+<div  class="tretjina">
+  <span>Mesto:</span>
+  <input type="text" name="kraj" id="mesto" placeholder="Ime mesta">
+  <button id="poslji">Išči</button>
+  <div id="podatki">
+    <ul class="nav nav-pills">
+        <li class="active" id="c"><a data-toggle="pill" href="#stopinje">&#8451;</a></li>
+        <li id="f"><a data-toggle="pill" href="#fahrenheiti">&#8457;</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="stopinje" class="tab-pane fade in active">
+          <span id="ime_mesta"></span> <br>
+          Vreme: <span id="opis"></span>
+          Trenutna temperatura: <span id="t_temp"></span> <br>
+          Dnevna minimalna temperatura: <span id="min_temp"></span> <br>
+          Dnevna maksimalna temperatura: <span id="max_temp"></span> <br>
+          Vlažnost: <span id="vlaznost"></span> <br>
+          Veter: <span id="veter"></span> <br>
+        </div>
+        <div id="fahrenheiti" class="tab-pane fade">
+      <span id="ime_mestaf"></span> <br>
+          Vreme: <span id="opisf"></span> <br>
+          Trenutna temperatura: <span id="t_tempf"></span> <br>
+          Dnevna minimalna temperatura: <span id="min_tempf"></span> <br>
+          Dnevna maksimalna temperatura: <span id="max_tempf"></span> <br>
+          Vlažnost: <span id="vlaznostf"></span> <br>
+          Veter: <span id="veterf"></span> <br>
+        </div>
+    </div>
+  </div>
+</div>
+<canvas id="za_oblak" style="position: absolute; left:750px; top: 230px;"></canvas>
+<canvas id="dez" style="position: absolute; left:750px; top: 330px;"></canvas>	
+<canvas id="oblak" style="position: absolute; left:750px; top: 180px;"></canvas>
+<canvas id="zunanji" style="position: absolute; left:750px; top: 290px;"></canvas>	
+<script src="../javascript/vreme.js"></script>
+
+<div class="tretjina">
+  <img alt="" src="https://spaceplace.nasa.gov/templates/featured/sun/sunburn300.png">
+</div>
+
+<!--TEMPERATURE PO URAH OZIROMA DNEVIH -->
+<!--<p style="text-align: center; font-weight: 700;" class="temperature">Temperature danes:</p>-->
+<p id="danes" style="text-align: center; font-weight: 700;" class="temperature"></p>
+
+
+<div class="container">
+<div id="dynamic" class="row">
+
+  <div id="1"><span></span><div></div></div>
+<div id="2"><span></span><div></div></div>
+<div id="3"><span></span><div></div></div>
+  <div id="4"><span></span><div></div></div>
+<div id="5"><span></span><div></div></div>
+ <div id="6"><span></span><div></div></div>
+ <div id="7"><span></span><div></div></div>
+   <div id="8"><span></span><div></div></div>
+
+ <!-- <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas1">00:00</span><div class="liki" id="temp1">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas2">03:00</span><div class="liki" id="temp2">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas3">06:00</span><div class="liki" id="temp3">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas4">09:00</span><div class="liki" id="temp4">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas5">12:00</span><div class="liki" id="temp5">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas6">15:00</span><div class="liki" id="temp6">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas7">18:00</span><div class="liki" id="temp7">20 &#8451; </div></div>
+  <div class="col-lg-3 col-sm-3 col-xs-6"><span class="ura" id="cas8">21:00</span><div class="liki" id="temp8">20 &#8451; </div></div>-->
+</div>
+</div>
+
+<p style="height: 30px;"></p>
+
+<p style="text-align: center; font-weight:700;" class="temperature" id="druge_dni"></p>
+
+<div class="container">
+<div class="row" id ="dynamic2">
+   <div id="d1"><span></span><div></div></div>
+ <div id="d2"><span></span><div></div></div>
+ <div id="d3"><span></span><div></div></div>
+   <div id="d4"><span></span><div></div></div>
+
+ <!-- <div class="col-lg-3"><span class="dan">Jutri</span><div class="dnevi" id="1_max">20 &#8451; <hr class="horizontal"/> 20 &#8451;</div></div>
+  <div class="col-lg-3"><span class="dan">Čez 2 dni</span><div class="dnevi" id="2_max">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>
+  <div class="col-lg-3"><span class="dan">Čez 3 dni</span><div class="dnevi" id="3_max">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>
+  <div class="col-lg-3"><span class="dan">Čez 4 dni</span><div class="dnevi" id="4_max">20 &#8451; <hr class="horizontal" /> 20 &#8451;</div></div>-->
+</div>
+</div>
+
+<p style="height: 30px;"></p>
+
+<a href="dogodki.html"><img alt="" src="../img/mestoSlo.jpg" style="width: 100%; "></a>
+
+<p style="height: 20px;"></p>

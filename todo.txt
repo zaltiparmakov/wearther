@@ -1,0 +1,4 @@
+1. Social Login (Facebook, Google, Microsoft)
+2. Invitation on event by email, and redirect to create an account
+3. Suggestion for reorganizing the event on better weather condition, and give options to user to choose from a random date and time.
+4. Allow users to change avatars

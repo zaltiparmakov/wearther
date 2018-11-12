@@ -1,0 +1,110 @@
+<div id="main">
+	<label>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container text-center">
+					<div class="nav navbar-nav navbar-center">
+						<a (click)="goBack()" id="nazaj">Nazaj na dogodke!</a>
+					</div>
+				</div>
+			</nav>
+	</label>
+
+	<div class="levo"></div>
+
+
+	<div class="dogodekOkvir">
+
+		<p id="naslov">Ustvarjanje novega dogodka</p>
+
+		<form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="form-horizontal" style="margin-top:20px; ">
+
+			<div class="form-group">
+				<label for="title" class="col-sm-2 control-label">Naziv dogodka:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="title"  name="title" placeholder="Piknik v Zgornji Kungoti">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="description" class="col-sm-2 control-label">Opis dogodka:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="description" name="description" placeholder="Druženje in peka čevapčičev">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="country" class="col-sm-2 control-label">Država:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="country" name="country" placeholder="Slovenija">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="city" class="col-sm-2 control-label">Kraj:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="city" name="city" placeholder="Ribnica">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="location" class="col-sm-2 control-label">Lokacija:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="location" name="location" placeholder="Velika ploščad">
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<label for="picture" class="col-sm-2 control-label">Slika:</label>
+			
+					<input ngModel type="file" accept="image/*" name="picture" id="picture">
+				
+			</div>
+
+			<div class="form-group">
+				<label for="start_date" class="col-sm-2 control-label">Datum začetka:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="start_date" name="start_date" placeholder="19.12.2017">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="start_time" class="col-sm-2 control-label">Čas začetka:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="start_time" name="start_date" placeholder="21.00">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="end_date" class="col-sm-2 control-label">Datum konca:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="end_date" name="end_date" placeholder="19.12.2017">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="end_time" class="col-sm-2 control-label">Čas konca:</label>
+				<div class="col-sm-8">
+					<input ngModel type="text" class="form-control" id="end_time" name="end_time" placeholder="23.00">
+				</div>
+			</div>
+
+	
+			<span id="vrsta" name="event_type">Vrsta dogodka: &nbsp;&nbsp;</span>
+			<select>
+			  <option value="dogodek" selected disabled>Dogodek</option>
+			  <option value="druzenje">Druženje</option>
+			  <option value="koncert">Koncert</option>
+			  <option value="piknik">Piknik</option>
+			  <option value="proslava">Proslava</option>
+			  <option value="drugo">Drugo</option>
+			</select>
+
+			<button type="submit" class="btn btn-primary btn-lg">Ustvari dogodek</button>
+		</form>
+	</div> <!-- konec glavnega okna -->
+
+
+	<div class="desno"></div>
+
+</div>

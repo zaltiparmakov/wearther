@@ -1,0 +1,258 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Work+Sans";
+@import "https://fonts.googleapis.com/css?family=Bree+Serif";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Lora";
+
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  
+  a {
+    color: #00B7FF; }
+    
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+nav div li .linki{
+	padding-bottom: 0px;
+
+}
+
+.navbar li{
+	height:50px;
+}
+
+nav div li hr{ 
+	margin-top: 2px;
+}
+
+#reg {
+	display: none;
+}
+
+.active{
+	background-color: black;
+	height: 100%;
+}
+.active:hover{
+	background-color: black;
+	height: 100%;
+}
+
+/*NAVBAR ELEMENTI*/
+.navbar .container li a{
+	font-weight: 700;
+}
+
+/*
+hr {
+    border: none;
+    height: 1px;
+    background: white;
+}*/
+
+.navbar .container li a:hover  hr {
+	color:white;
+	animation-name: animacija;
+	animation-duration: 0.3s;
+	position:relative;
+}
+
+@keyframes animacija{
+	0%  {transform: scale(0);}
+	10% {transform: scale(0.1);}
+	20% {transform: scale(0.2);}
+	30% {transform: scale(0.3);}
+	40% {transform: scale(0.4);}
+	50% {transform: scale(0.5);}
+	60% {transform: scale(0.6);}
+	70% {transform: scale(0.7);}
+	80% {transform: scale(0.8);}
+	90% {transform: scale(0.9);}
+	100% {transform: scale(1);}
+}
+
+.btn-group{
+	padding-top: 10px;
+	padding-left: 20px;
+}
+/* KONEC NAVBAR */
+/* KONEC NAVBAR */
+/* KONEC NAVBAR */
+
+
+/* MAIN */
+/* MAIN */
+/* MAIN */
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+   float: left;
+}
+
+#main{
+	padding: 50px 0 50px 0;
+}
+
+#naslov{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 15px;
+}
+
+
+.tretjina{
+	float:left;
+	width: 50%;
+	margin-top: 100px;
+	height:500px;
+	text-align: center;
+
+}
+
+#podatki{
+	margin-top: 70px;
+}
+
+.tab-pane{
+	text-align: center;
+}
+
+#pravokotnik{
+	height: 450px;
+	width: 350px;
+	border: 1px solid black;
+	background: black;
+	color:white;
+	text-align: center;
+}
+
+.nav-pills{
+	margin-left:40%;
+}
+#izpisStopinj{
+	margin-left: 45%;
+	margin-top: 20px;
+	margin-bottom: 40px;	
+}
+
+#kvadrat{
+	height: 300px;
+	width: 300px;
+	border: 1px solid black;
+	background: black;
+	color:white;
+	text-align: center;
+	margin: 0px 6%;
+}
+
+.tretjina:nth-child(4){
+	margin-top: 40px;
+}
+.tretjina:nth-child(4) p{
+	text-align: center;
+}
+
+#zemljevid{
+	position: relative;
+	width:350px;
+	height:200px;
+	color:white;
+	background-color:black;
+
+	float: top;
+}
+
+div div .liki{
+	width: 110%;
+	height: 80px; 
+	border: 2px solid black;
+	border-radius: 20%;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 20px;		
+}
+
+.temperature{
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+.ura{
+	margin: 15px 20px;
+}
+
+div div div div hr{
+	height: 2px;
+	width: 20	0px;
+	color: grey;
+	background-color: grey;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.col-lg-3{
+	text-align: center;
+}
+
+div div div span.dan{
+	color: dimgrey;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.dnevi{
+	margin: 5%;
+	width: 90%;
+	height: 110px; 
+	border: 2px solid black;
+	border-radius: 10%;
+	text-align: center;
+	font-size:30px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.ura, .liki, .dnevi{
+	font-family: 'Lora', serif;
+}
+
+
+
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+#footer {
+	clear: left;
+	position:relative;
+   color: white;
+   width:100%;
+   height:85px;   /* Height of the footer */
+   background-image: url(../img/footer.jpg);
+   background-repeat: repeat;
+}
+
+#ekipa{
+	font-family: 'Rozha One', serif;
+	font-size: 24px;
+   	text-align: center;
+   	padding-top: 5px;
+}
+
+#clani{
+	font-family: Open sans;
+	font-size: 18px;
+   	text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+	.tretjina{
+		clear: both;
+		text-align: center;
+		margin: auto 35% ;
+	}
+}
